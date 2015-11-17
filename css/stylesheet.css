@@ -1,0 +1,901 @@
+
+*, *:before, *:after {
+	margin:0;
+	
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+
+header{
+	margin:0;
+	padding:0;
+}
+
+html,
+body{
+	font-family: 'Advent Pro', sans-serif;
+	background:#E4EEFD;
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+p{
+	color:#fff;
+	text-align:justify;
+}
+h1,h2,h3{
+	color:#edca31;
+}
+br{
+	line-height:1.3;
+}
+	
+
+
+/* 
+	NAVIGATION BAR
+*/
+.nav-container{
+	background: #4e6382;
+	height: 78px;
+	width: 100%;
+	border-top: 5px solid #629CF3;
+	font-size:18px;
+	font-weight:300;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:3;
+
+	
+	-webkit-box-shadow:0 3px rgba(0,0,0,0.3);
+	-moz-box-shadow:0 3px rgba(0,0,0,0.3);
+	box-shadow: 0 3px rgba(0,0,0,0.3);
+}
+
+.logo {
+	float:left;
+	height:83px;
+	width:auto;
+	margin:0;
+	padding-top:5px;
+	z-index:3;
+	position:relative;
+}
+
+.navbar{
+	margin:0;
+	padding:0;
+	z-index:3;
+	position:relative;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	text-align: center;
+	float: right;
+	width:48.3333333%;
+}
+
+nav li {
+	display: inline;
+	line-height:73px;
+}
+
+nav a {
+	display:inline-block;
+	color:#FFFFFF;
+	text-decoration:none;
+	margin:0;
+}
+
+nav li a {
+	height:73px;
+	padding:0 1.2em;
+}
+
+nav a:hover {
+    color: white;
+	background:#546b8d;
+}
+
+.current{
+	background:rgba(98,156,243,0.80);
+}
+/* 
+	NAVIGATION BAR
+*/
+
+
+/* 
+	HOME SLIDESHOW
+	
+	Radio Click Through #2
+	Hornebom / 2013-10-23
+	MIT licensed
+	http://hornebom.com/
+	http://codepen.io/Hornebom/pen/KlLtF
+*/
+*, *:before, *:after {
+	margin:0;
+	padding:0;
+	
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+#gal {
+	margin:0 5%;
+	width: 90%;
+	height: 500px;
+	padding-top:78px;
+	z-index:0;
+	
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	
+	-webkit-box-shadow:0px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 5px rgba(0,0,0,0.3);
+	box-shadow:0px 5px rgba(0,0,0,0.3);
+}
+
+#gal:after {
+	content:'';
+	position:absolute;
+	bottom:24px;
+	right:0;
+	left:0;
+	width:100%;
+	height:1px;
+	background:rgba(78,99,130,0.5);
+	z-index:3;
+}
+
+#gal ul {list-style-type:none;}
+
+input[type="radio"], input[type="radio"] + label {
+	position:absolute;
+	bottom:15px;
+	display:block;
+	width:20px;
+	height:20px;
+	cursor:pointer;
+  
+  -webkit-border-radius:50%;
+  -moz-border-radius:50%;
+  border-radius:50%;
+}
+
+input[type="radio"] {
+  opacity:0;
+  z-index:9;
+}
+
+input[value="one"], input[value="one"] + label {left:10.8333333%;}
+input[value="two"], input[value="two"] + label {left:21.6666666%;}
+input[value="three"], input[value="three"] + label {left:32.4999999%;}
+input[value="four"], input[value="four"] + label {left:43.3333332%;}
+input[value="five"], input[value="five"] + label {left:54.1666665%;}
+input[type="radio"] + label {
+  background:rgba(78,99,130,0.8);
+  z-index:7;
+  
+  -webkit-box-shadow:0px 0px 0px 0px rgba(78,99,130,0.35);
+  -moz-box-shadow:0px 0px 0px 0px rgba(78,99,130,0.35);
+  box-shadow:0px 0px 0px 0px rgba(78,99,130,0.35);
+  
+}
+figure, figure img, figcaption {
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+figure {
+  bottom:0;
+  left:0;
+  width:100%;
+  height:100%;
+  display:block;
+  overflow:hidden;
+}
+figure img {
+  bottom:0;
+  left:0;
+  display:block;
+  width:100%;
+  height:100%;
+  z-index:1;
+  
+  -webkit-transition:all .15s .15s, z-index 0s;
+  -moz-transition:all .15s .15s, z-index 0s;
+  -o-transition:all .15s .15s, z-index 0s;
+  transition:all .15s .15s, z-index 0s;
+}
+figcaption {
+  display:block;
+  width:35%;
+  height:100%;
+  
+  background:#4e6382;
+  background-repeat:no-repeat;
+  text-align:center;
+  z-index:3;
+  
+  -webkit-box-shadow:-10px 0px 20px rgba(0,0,0,0.1);
+  -moz-box-shadow:-10px 0px 20px rgba(0,0,0,0.1);
+  box-shadow:-10px 0px 20px rgba(0,0,0,0.1);
+  
+  -webkit-transform:translateX(25%);
+  -moz-transform:translateX(25%);
+  -ms-transform:translateX(25%);
+  -o-transform:translateX(25%);
+  transform:translateX(25%);
+  
+  -webkit-transition:all .4s;
+  -moz-transition:all .4s;
+  -o-transition:all .4s;
+  transition:all .4s;
+}
+figcaption h2 {
+  display:inline-block;
+  margin:10px 30px;
+  font-weight:700;
+  font-size:36px;
+  line-height:1.25;
+}
+
+figcaption p {
+  margin:25px;
+  font-size:16px;
+  line-height:1.3;
+}
+figcaption p a{
+	background:none;
+	text-decoration:none;
+	margin:0;
+	padding:0;
+}
+figcaption p a:hover{
+	background:#4e6382;
+	text-decoration:none;
+	color:#629cf3;
+}
+
+input[type="radio"]:hover + label {
+  background:rgba(78,99,130,0.6);
+}
+
+input[type="radio"]:checked + label {
+  background:rgba(78,99,130,1);
+  -webkit-box-shadow:0px 0px 0px 5px rgba(78,99,130,0.3);
+  -moz-box-shadow:0px 0px 0px 5px rgba(78,99,130,0.3);
+  box-shadow:0px 0px 0px 5px rgba(78,99,130,0.3);
+}
+
+input[type="radio"]:checked + label:before {}
+input[type="radio"]:checked ~ figure img {
+  z-index:2;
+  
+  -webkit-transform:translatex(0px);
+  -moz-transform:translatex(0px);
+  -ms-transform:translatex(0px);
+  -o-transform:translatex(0px);
+  transform:translatex(0px);
+  
+  -webkit-transition:all .15s, z-index 0s;
+  -moz-transition:all .15s, z-index 0s;
+  -o-transition:all .15s, z-index 0s;
+  transition:all .15s, z-index 0s;
+}
+
+input[type="radio"]:checked ~ figure figcaption {
+  z-index:8;
+  
+  -webkit-transform:translateX(0px);
+  -moz-transform:translateX(0px);
+  -ms-transform:translateX(0px);
+  -o-transform:translateX(0px);
+  transform:translateX(0px);
+  
+  -webkit-transition:all .35s, .7s;
+  -moz-transition:all .35s, .7s;
+  -o-transition:all .35s, .7s;
+  transition:all .35s, .7s;
+}
+/* 
+	HOME SLIDESHOW
+	
+	Radio Click Through #2
+	Hornebom / 2013-10-23
+	MIT licensed
+	http://hornebom.com/
+	http://codepen.io/Hornebom/pen/KlLtF
+*/
+
+
+/*  
+	NEWS SLIDER
+	
+	Made after a BarrelNY Tutorial
+	http://www.barrelny.com/blog/building-a-jquery-slideshow-plugin-from-scratch/
+	Codepen: http://codepen.io/barrel/pen/oBefw 
+*/	
+.carousel {
+	width: 90%;
+	margin:1% 5%;
+	position: relative;
+	padding-top: 30%;
+	overflow: hidden;
+	background: #4e6382;
+	z-index: 2;
+	
+	-webkit-box-shadow: 0px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 5px rgba(0,0,0,0.3);
+	box-shadow: 0px 5px rgba(0,0,0,0.3);  
+}
+
+.inner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index:0;
+}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	z-index: 2;;
+	opacity: 0;
+}
+
+.slide.active,
+.slide.left,
+.slide.right {
+	z-index:2;
+	opacity: 1;
+}
+
+.js-reset-left{left:0}
+
+.slide.left {
+	left:-100%;
+	right:0;
+}
+
+.slide.right {
+	right:-100%;
+	left: auto;
+}
+
+.transition .slide.left{left:0%}
+.transition .slide.right{right:0%}
+
+.transition .slide.shift-right{right: 100%;left:auto}
+.transition .slide.shift-left{left: 100%;right:auto}
+
+.transition .slide {
+	transition-property: right, left, margin;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  position:absolute;
+  top:50%;
+  border-top:3px solid #fff;
+  border-right:3px solid #fff;
+  cursor:pointer;
+  transition:all 0.2s ease-out;
+}
+
+.arrow:hover {
+  border-color:#629cf3;
+  border-width:5px;
+}
+
+.arrow-left {
+  left:20px;
+  transform:rotate(225deg);
+}
+
+.arrow-right {
+  right:20px;
+  transform:rotate(45deg);
+}
+.indicators {
+  display:none;
+}
+.slide h2 {
+	margin-top:2%;
+	margin-left:35%;
+	margin-right:5%;
+	position:absolute;
+	font-size:36px;
+	line-height:1.25;
+	font-weight:700;
+	
+}
+.slide p {
+	margin-top:15%;
+	margin-left:35%;
+	margin-right:5%;
+	margin-bottom:2%;
+	position:absolute;
+	text-align:justify;
+	font-size:16px;
+	line-height:1.375;
+	font-weight:400;
+}
+.slide img {
+	position:absolute;
+	width:100%;
+	height:auto;
+	
+}
+.slide p a {
+	background:none;
+	text-decoration:none;
+}
+.slide p a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+.slide p a:hover {
+	text-decoration:none;
+	color:#629cf3;
+}
+
+/*  
+	NEWS SLIDER
+	
+	Made after a BarrelNY Tutorial
+	http://www.barrelny.com/blog/building-a-jquery-slideshow-plugin-from-scratch/
+	Codepen: http://codepen.io/barrel/pen/oBefw 
+*/
+
+
+/*
+	REVIEW VIDEOS
+*/
+.videos_review-container{
+	width: 90%;
+	margin:0 5%;
+}
+.left-rvideo{
+	float:left;
+	width:49.5%;
+	height:300px;
+	background:#4e6382;
+	
+	-webkit-box-shadow:0px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 5px rgba(0,0,0,0.3);
+	box-shadow:0px 5px rgba(0,0,0,0.3);
+}
+.right-rvideo{
+	float:right;
+	width:49.5%;
+	height:300px;
+	background:#4e6382;
+	
+	-webkit-box-shadow:0px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 5px rgba(0,0,0,0.3);
+	box-shadow:0px 5px rgba(0,0,0,0.3);
+}
+.left-rvideo h3,
+.left-rvideo p{
+	margin:0 20px;
+}
+.right-rvideo h3,
+.right-rvideo p{
+	margin:0 20px;
+}
+.left-rvideo h3,
+.right-rvideo h3{
+	margin-top:10px;
+}
+/*
+	REVIEW VIDEOS
+*/
+
+
+/*
+	UNBOXING VIDEOS
+*/
+.videos_unboxing-container{
+	width: 90%;
+	margin:0 5%;
+}
+.left-uvideo{
+	margin-top:1%;
+	float:left;
+	width:49.5%;
+	height:300px;
+	background:#4e6382;
+	
+	-webkit-box-shadow:0px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 5px rgba(0,0,0,0.3);
+	box-shadow:0px 5px rgba(0,0,0,0.3);
+}
+.right-uvideo{
+	margin-top:1%;
+	float:right;
+	width:49.5%;
+	height:300px;
+	background:#4e6382;
+	
+	-webkit-box-shadow:0px 5px rgba(0,0,0,0.3);
+	-moz-box-shadow:0px 5px rgba(0,0,0,0.3);
+	box-shadow:0px 5px rgba(0,0,0,0.3);
+}
+.left-uvideo h3,
+.left-uvideo p{
+	margin:0 20px;
+}
+.right-uvideo h3,
+.right-uvideo p{
+	margin:0 20px;
+}
+.left-uvideo h3,
+.right-uvideo h3{
+	margin-top:10px;
+}
+/*
+	UNBOXING VIDEOS
+*/
+
+
+/*
+	FitVids.js by Chris Coiyer and Paravel 
+	for embed videos
+	https://github.com/davatron5000/FitVids.js
+	http://codepen.io/bradfrost/pen/ejfBJ
+*/
+video {
+    width: 100%
+}
+		  
+iframe,
+embed,
+object {
+	border:0;
+	width: 100%;
+}
+/*
+	FitVids.js by Chris Coiyer and Paravel 
+	for embed videos
+	https://github.com/davatron5000/FitVids.js
+	http://codepen.io/bradfrost/pen/ejfBJ
+*/
+
+
+/*
+	FOOTER
+	
+	Made after Sticky Footer by Ryan Fait
+	http://ryanfait.com/html5-sticky-footer/	
+*/
+.site-content{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px;
+}
+
+.push{
+	height:100px;
+	clear:both;
+}
+
+.footer{
+	background: #4e6382;
+	height: 100px;
+	width: 100%;
+	margin-top:1%;
+	border-bottom: 5px solid #629CF3;
+	clear:both;
+	z-index:0;
+}
+
+/* 
+	Social Media items
+	Inspired from a pen by Riad Kilani
+	Codepen: http://codepen.io/f1ss1on/pen/upIKn   
+*/
+.socialIcons {
+	font-size: 35px;
+	float:left;
+}
+
+.socialIcons li {
+	display: inline-block;
+	float: left;
+	text-align: center;
+	line-height: 95px;
+}
+
+.socialIcons li a {
+	color: #629cf3;
+	opacity:.8;
+    display: inline-block;
+    width:95px;
+    height: 95px;
+}
+
+.socialIcons a:hover {
+	color: #fff; 
+	opacity:1;
+	transition: .2s;
+}
+
+.fb:hover {
+	background: #3c599f;
+}
+
+.google:hover {
+	background: #d34836;
+}
+
+.youtube:hover {
+	background: #e52d27;
+}
+
+.backtop:hover{
+	background:#546b8d;
+}
+/* 
+	Social Media items
+	Inspired from a pen by Riad Kilani
+	Codepen: http://codepen.io/f1ss1on/pen/upIKn   
+*/
+
+.copyright{
+	color:#fff;
+	text-align:right;
+	margin-right:5%;
+	padding-top:25px;
+	font-weight:300;
+	font-size:14px;
+}
+/*
+	FOOTER
+*/
+
+
+/*
+	MEDIAQUERIES
+*/
+
+@media screen and (max-width:1050px) {
+	.nav-container{
+		font-size:16px;
+	}
+}
+/* Video Containers Fixes */
+@media screen and (min-width:1050px) {
+	.left-uvideo,
+	.right-uvideo,
+	.left-rvideo,
+	.right-rvideo{
+		height:550px;
+	}
+}  
+
+/* Nav bar glitch */
+@media screen and (max-width:910px) {
+	.logo,
+	nav ul{
+		width:auto;
+		float:none;
+	}
+	.nav-container{
+		font-size:16px;
+		height:auto;
+		position:fixed;
+	}
+	.logo{
+		margin:0 25%;
+	}
+}
+
+/* Tablet Fixes */
+@media screen and (max-width:768px) {
+	body{
+		max-width:768px;
+	}
+	.logo,
+	nav ul{
+		width:auto;
+		float:none;
+	}
+	.nav-container{
+		font-size:16px;
+		height:auto;
+		position:static;
+	}
+	.logo{
+		margin:0 25%
+	}
+	#gal {
+		max-height:350px;
+	}
+	.carousel{
+		padding-top:30%;
+	}
+}
+
+/* Mobile Fixes */
+@media screen and (max-width:480px) {
+	.carousel{
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+		padding-top:60%;
+		
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+		
+	}
+	.videos_review-container{
+		width:100%;
+		margin:0;
+	}
+	.videos_unboxing-container{
+		width:100%;
+		margin:0;
+	}
+	.left-uvideo,
+	.right-uvideo {
+		width:100%;
+		
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+
+	.left-rvideo,
+	.right-rvideo{
+		width:100%;
+		
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+	nav li a {
+		display:block;
+	}
+	.nav-container{
+		font-size:16px;
+		height:auto;
+		position:static;
+		
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+	.logo{
+		height:65px;
+		width:auto;
+		float:none;
+		margin:0;	
+	}
+	#gal {
+		max-height:250px;
+		margin:0;
+		width:100%;
+		margin:1% 0;
+		
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none;
+	}
+	figure img{
+		height:250px;
+		width:auto;
+	}
+	iframe,
+	embed,
+	object {
+		max-height:200px;
+	}
+	.socialIcons {
+		float:none;
+		position:relative;
+	}
+	.socialIcons li{
+		float:none;
+		display:block;
+	}
+	.socialIcons li a {
+		display:inline-block;
+		width:100%;
+	}
+	.footer{
+		height:auto;
+		position:relative;
+	}
+	.copyright{
+		width:100%;
+		text-align:center;
+		margin-bottom:5px;
+		padding:0;
+	}
+}
+
+/* Typography */
+
+@media screen and (max-width:768px) {
+	.slide p{
+		margin-top:9%;
+		margin-right:12%;
+		font-size:14px;
+		line-height:1.3;
+	}
+	.slide h2{
+		font-size:16px;
+		line-height:1.2;
+	}
+	figcaption h2{
+		margin:0 25px;
+		line-height:1.2;
+	}
+	figcaption p{
+		margin:0 25px;;
+		line-height:1.3;
+	}
+	br{
+		line-height:1.3;
+	}
+		
+}
+@media screen and (max-width:480px) {
+	.slide p{
+		margin-top:12%;
+		margin-right:12%;
+		font-size:12px;
+		line-height:1;
+	}
+	.slide h2{
+		margin-right:12%;
+		font-size:14px;
+		line-height:1;
+	}
+	figcaption h2{
+		margin:0 10px;;
+		font-size:14px;
+		line-height:1;
+	}
+	figcaption p {
+		text-align:left;
+		margin:0 10px;
+		font-size:12px;
+		line-height:1;
+	}
+	figcaption p a{
+		font-size:12px;
+		margin:0 10px;
+		line-height:1;
+	}
+	br{
+		line-height:0.8;
+		margin:0;
+	}
+		
+}
+/*
+	MEDIAQUERIES
+*/	

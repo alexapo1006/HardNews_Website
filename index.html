@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<title>HardNews - The Ultimate Review Site</title>
+    
+    <!-- CSS Links -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro:700,400,300,600,' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"> <!-- This is only for the offline view of the social icons -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- JavaScript Links -->
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/stickynav.js"></script>
+	<script src="js/backtop.js"></script>
+	<script src="js/scroll.js"></script>
+    
+</head>
+
+<body>
+
+<header>
+<a href="top"></a>
+</header>
+
+    <div class="nav-container">
+    
+    <a href="http://alexapo.worcestercomputing.com"><img class="logo" src="img/logo.png" width="493" height="98" alt="Logo"/></a>
+    
+    <nav>
+    	<ul class="navbar">
+        	<li><a class="link-1 current" href="#home-container">Home</a></li>
+            <li><a class="link-2" href="#news-container">News</a></li>
+            <li><a class="link-3" href="#video1">Reviews</a></li>
+            <li><a class="link-4" href="#video2">Unboxings</a></li>
+            <li><a class="link-5" href="#contact">Contact</a></li>
+    	</ul>
+	</nav>
+    </div>
+    
+<div class="site-content">
+
+    <div id="home-container">
+    
+    <!-- Radio Click Trought #2 by Hornebom - http://codepen.io/Hornebom/pen/KlLtF -->
+    <div id="gal">
+  <nav class="galnav">
+    <ul>
+    
+      <li>
+        <input type="radio" name="btn" value="one" checked="checked"/>
+        <label></label>
+        <figure>
+          <img src="img/slideshow/gta5.jpg" width="1203" height="500" alt="GTA5 Rrelease"/>
+          <figcaption>
+            <h2>GTA 5 postponed for the March 25th</h2>
+            <p>	For more information visit the News section of this site!<br>You will find ou more about it and you'll enjoy the interface of the site.<br><br><br><br><a href="#news-container">--Go-To-News--></a></p>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <input type="radio" name="btn" value="two"/>
+        <label></label>
+         <figure class="entypo-forward">
+         <img src="img/slideshow/spiral3_ara.jpg" width="1203" height="500" alt="Ara Spiral 3"/>
+          <figcaption>
+            <h2>Spiral 3, the next Google's Project Ara Phone</h2>
+            <p>	For more information visit the News section of this site!<br>You will find ou more about it and you'll enjoy the interface of the site.<br><br><br><br><a href="#news-container">--Go-To-News--></a></p> 
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <input type="radio" name="btn" value="three"/>
+        <label></label>
+        <figure class="entypo-forward">
+        <img src="img/slideshow/mail_pilot.jpg" width="1203" height="500" alt="Mail Pilot 2"/>  
+          <figcaption>
+            <h2>Mail Pilot 2 has been announced!</h2>
+            <p>	For more information visit the News section of this site!<br>You will find ou more about it and you'll enjoy the interface of the site.<br><br><br><br><a href="#news-container">--Go-To-News--></a></p>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <input type="radio" name="btn" value="four"/>
+        <label></label>
+         <figure class="entypo-forward">
+         <img src="img/slideshow/evga_gtx980.jpg" width="1203" height="500" alt="EVGA GTX980"/>
+          <figcaption>
+            <h2>Latest Review Video:<br>
+             EVGA nVidia GTX980 Review</h2>
+                <p>	For more information visit the Reviews section of this site!<br>You will find ou more about it and you'll enjoy the interface of the site.<br><br><br><br><a href="#video1">--Go-To-Reviewss--></a></p>
+          </figcaption>
+        </figure>
+      </li>
+      
+      <li>
+        <input type="radio" name="btn" value="five"/>
+        <label></label>
+         <figure class="entypo-forward">
+         <img src="img/slideshow/intel_space_capsule.jpg" width="1203" height="500" alt="Intel Space Capsule"/>
+           <figcaption>
+             <h2>Latest Unboxing Video:<br>
+             Intel Space Capsule Unboxing</h2>
+                <p>	For more information visit the Unboxings section of this site!<br>You will find ou more about it and you'll enjoy the interface of the site.<br><br><br><br><a href="#video2">--Go-To-Unboxings--></a></p>
+        </figcaption>
+        </figure>
+      </li>
+      
+    </ul>
+    
+  </nav>
+  <!-- Radio Click Trought #2 by Hornebom - http://codepen.io/Hornebom/pen/KlLtF -->
+  
+</div>
+
+    </div>
+    
+    <div id="news-container">
+    
+    <!--  Made after a BarrelNY Tutorial
+    		http://www.barrelny.com/blog/building-a-jquery-slideshow-plugin-from-scratch/
+  			Codepen: http://codepen.io/barrel/pen/oBefw -->
+
+<div class="carousel">
+    <div class="inner">
+      <div class="slide active">
+      <img src="img/slider/gta5_logo.png" width="1214" height="405" alt="GTA V Logo"/>
+      <h2>GTA 5 postponed for the March 25th</h2>
+      <p>After initially, Rockstar announced the release of the new Grand Theft Auto PC on January 27th, they postponed the event until March 25th. But that notice stated the official minimum specs to run the game.It requires minimum quad-core processor, 4GB of RAM, 1GB video memory and an amount of 65GB free space, which is really, a lot.</p>
+      </div>
+      
+      <div class="slide">
+      <img src="img/slider/ara_logo.png" width="1214" height="405" alt="Project Ara Logo"/>
+        <h2>Spiral 3, the next Google's Project Ara Phone</h2>
+        <p>The future modular phone from Google sounds promising.At The Ara Developers Conference, the head of the project, Paul Eremenko stated that for this model are available from 20 to 30 components (modules) and supplied battery has a range of 24 hours, specifies Engadget.The innovation of Spiral 3 Ara consists in moving the electromagnets that supports the modules in the phone endoskeleton.</p>
+      </div>
+      
+      <div class="slide">
+      <img src="img/slider/mail_pilot_logo.png" width="1214" height="405" alt="Mail Pilot Logo"/>
+      	<h2>Mail Pilot 2 has been announced!</h2>
+        <p>Mail Pilot is an email application based on gestures and reminders, making from Inbox a To-Do list. Similar to Mailbox, the application being bought by Dropbox is a more refined and more developed version, which has companion for Mac,too. Further is a link to watch the sneek peak of the second version for the iOS application. <br><a href="http://vimeo.com/116064663">Click me</a></p>
+      </div>
+    </div>
+   
+    <div class="arrow arrow-left"></div>
+    <div class="arrow arrow-right"></div>
+  </div>
+  
+  <!--  Made after a BarrelNY Tutorial 
+   		  http://www.barrelny.com/blog/building-a-jquery-slideshow-plugin-from-scratch/
+  		  Codepen: http://codepen.io/barrel/pen/oBefw -->
+    </div>
+    
+    <div class="videos_review-container">
+    
+    <div id="video1" class="left-rvideo">
+    
+    <div class="vendor">
+        	<iframe width="1280" height="720" src="http://www.youtube.com/embed/86wXT_XvIOM?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+	      </div>
+    <h3>EVGA nVidia GTX980 Review</h3>
+          <p>These videos belong to Linus Media Group and I've posted here just as an example.</p>      
+    </div>
+    
+    <div class="right-rvideo">
+    <div class="vendor">
+        	<iframe width="1280" height="720" src="http://www.youtube.com/embed/-uCWTfPZlDw?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+	      </div>
+    <h3>Intel Core-i7 5960X Review</h3>
+          <p>These videos belong to Linus Media Group and I've posted here just as an example.</p>
+    </div>
+    
+    </div>
+    
+    <div class="videos_unboxing-container">
+    
+    <div id="video2" class="left-uvideo">
+    <div class="vendor">
+        	<iframe width="1280" height="720" src="http://www.youtube.com/embed/0LR-LlMZlrU?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+	      </div>
+          <h3>Intel Space Capsule Unboxing</h3>
+          <p>These videos belong to Linus Media Group and I've posted here just as an example.</p>
+    </div>
+    
+    <div class="right-uvideo">
+    <div class="vendor">
+        	<iframe width="1280" height="720" src="http://www.youtube.com/embed/9k5_f_gsxJw?rel=0&amp;showinfo=0"  allowfullscreen></iframe>
+	      </div>
+          <h3>AMD Radeon R9 290 Unboxing</h3>
+          <p>These videos belong to Linus Media Group and I've posted here just as an example.</p>
+    </div>
+    
+    </div>
+    
+    <div class="push"></div>
+    
+    </div>
+    
+<div id="contact">
+
+<div class="footer">
+
+	<div class="socialIcons">
+  <ul>
+    <li><a href="http://www.facebook.com/" title="Like us on Facebook" class="fb"><i class="fa fa-facebook"></i></a></li>
+    <li><a href="http://www.youtube.com/" title="Subscribe us on Youtube" class="youtube"><i class="fa fa-youtube"></i></a></li>
+    <li><a href="http://plus.google.com" title="Follow us on Google+" class="google"><i class="fa fa-google-plus"></i></a></li>
+    
+    <li><a href="top" title="Go to top" class="backtop"><i class="fa fa-chevron-up"></i></a></li>
+    
+  </ul>
+  
+</div>
+
+	<p class="copyright">2015 HardNews &copy; All rights reserved<br>HardNews - The Ultimate Review Site<br>Used images under no license protection<br>Videos only for example, no commercial rights or use</p>
+    
+    
+	</div>
+    </div>
+    
+    <script src="js/carousel.js"></script>
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<script src="js/jquery.fitvids.js"></script>    
+	<script>
+  		$(document).ready(function(){
+    		$(".left-rvideo").fitVids();
+			$(".right-rvideo").fitVids();
+			$(".left-uvideo").fitVids();
+			$(".right-uvideo").fitVids();
+  		});
+	</script>
+	
+</body>
+</html>
